@@ -5,6 +5,7 @@ const path = require('path');
     console.log("we write the command")
     res.send("hello we recieve a request from ur side")
 })*/
+app.use(express.static('public'))
 app.set('view engine','ejs');
 //app.set('views',path.join(_dirname,'/views'))
 app.get('/',(req,res)=>{
