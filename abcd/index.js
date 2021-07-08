@@ -5,6 +5,7 @@ console.dir(app)
     console.log("we write the command")
     res.send("hello we recieve a request from ur side")
 })*/
+app.set('view engine','ejs');
 app.get('/',(req,res)=>{
     res.send("home page")
 })
@@ -16,7 +17,7 @@ app.get('/cats/:subreddit',(req,res)=>{
 })
 app.get('/cats',(req,res)=>{
     console.log('cat club join')
-    res.send("meow!!")
+    res.render('home.ejs')
 })
 app.get('/search',(req,res)=>{
     //console.log(req.query);
