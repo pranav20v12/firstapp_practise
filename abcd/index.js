@@ -24,6 +24,10 @@ app.get('/rand',(req,res)=>{
     const num=5;
     res.render('random',{rand:num})
 })
+app.get('/hello',(req,res)=>{
+    const num=6;
+    res.render('subreddit',{num})
+})
 app.get('/search',(req,res)=>{
     //console.log(req.query);
     const { q } = req.query
