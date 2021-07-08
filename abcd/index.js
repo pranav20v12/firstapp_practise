@@ -20,6 +20,10 @@ app.get('/cats',(req,res)=>{
     console.log('cat club join')
     res.render('home.ejs')
 })
+app.get('/rand',(req,res)=>{
+    const num=5;
+    res.render('random',{rand:num})
+})
 app.get('/search',(req,res)=>{
     //console.log(req.query);
     const { q } = req.query
