@@ -28,6 +28,10 @@ app.get('/hello',(req,res)=>{
     const num=6;
     res.render('subreddit',{num})
 })
+app.get('/catloop',(req,res)=>{
+    const cats=['hello','bye','good','boy']
+    res.render('cat',{cats})
+})
 app.get('/search',(req,res)=>{
     //console.log(req.query);
     const { q } = req.query
