@@ -6,7 +6,7 @@ const path = require('path');
     res.send("hello we recieve a request from ur side")
 })*/
 app.set('view engine','ejs');
-app.set('views',path.join(_dirname,'/views'))
+//app.set('views',path.join(_dirname,'/views'))
 app.get('/',(req,res)=>{
     res.send("home page")
 })
