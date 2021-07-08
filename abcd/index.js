@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express()
-console.dir(app)
+const path = require('path');
 /*app.use((req,res)=>{
     console.log("we write the command")
     res.send("hello we recieve a request from ur side")
 })*/
 app.set('view engine','ejs');
+app.set('views',path.join(_dirname,'/views'))
 app.get('/',(req,res)=>{
     res.send("home page")
 })
